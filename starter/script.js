@@ -54,6 +54,34 @@ const restaurant = {
   },
 };
 
+console.log('------- OR -------');
+// Use Any  data type, return ANY data tyype, short-circuiting
+console.log(3 || 'Emmanuel');
+console.log('' || 'Emmanuel');
+console.log(true || 0);
+console.log(undefined || null);
+
+console.log(undefined || 0 || '' || 'Hello' || 23 || null);
+
+restaurant.numGuests = 23;
+const guest1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guest1);
+const guest2 = restaurant.numGuests || 10;
+console.log(guest2);
+
+console.log('------- AND -------');
+console.log(0 && 'Emmanuel');
+console.log(7 && 'Emmanuel');
+
+console.log('Hello' && 23 && null && 'Emmanuel');
+
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushrooms', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
+
+/*
 ////////////////////////////////////////////////////////// Rest Pattern and Parameters
 // 1) Destructuring
 
@@ -91,7 +119,7 @@ add(...x);
 restaurant.orderPizza('mushrooms', 'onion', 'olives', 'spinach');
 
 restaurant.orderPizza('mushrooms');
-/*
+
 restaurant.orderDelivery({
   time: '22:30',
   address: 'Via del Sole, 21',
