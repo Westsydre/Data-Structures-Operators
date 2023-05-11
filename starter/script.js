@@ -54,6 +54,7 @@ const restaurant = {
   },
 };
 
+////////////////////////////////////////////////////////// Rest Pattern and Parameters
 // 1) Destructuring
 
 // SPREAD because on right side of =
