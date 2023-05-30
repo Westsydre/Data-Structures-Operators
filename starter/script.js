@@ -54,6 +54,15 @@ const restaurant = {
   },
 };
 
+restaurant.numGuest = 0;
+const guest = restaurant.numGuest || 10;
+console.log(guest);
+
+// Nullish Coalescing Operator
+const guestCorrect = restaurant.numGuest ?? 10;
+console.log(guestCorrect);
+
+/*
 console.log('------- OR -------');
 // Use Any  data type, return ANY data tyype, short-circuiting
 console.log(3 || 'Emmanuel');
@@ -81,7 +90,7 @@ if (restaurant.orderPizza) {
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach');
 
-/*
+
 ////////////////////////////////////////////////////////// Rest Pattern and Parameters
 // 1) Destructuring
 
