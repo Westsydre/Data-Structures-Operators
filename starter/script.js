@@ -55,6 +55,45 @@ const restaurant = {
   },
 };
 
+// Sets
+const ordersSet = new Set([
+  'Pizza',
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+
+console.log(new Set('Emmanuel'));
+
+//Checking for size of Sets => .size
+console.log(ordersSet.size);
+// Checking if a certain element is in a Sets => .has()
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+// To add new element t a set => .add()
+ordersSet.add('Garlic Bread');
+ordersSet.add('Garlic Bread');
+// To delete in a set .delete()
+ordersSet.delete('Pasta');
+// ordersSet.clear()
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+// Example
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+);
+
 // Coding Challenge 2
 // const game = {
 //   team1: 'Bayern Munich',
