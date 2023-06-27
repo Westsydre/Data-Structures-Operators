@@ -55,6 +55,80 @@ const restaurant = {
   },
 };
 
+// Coding Challenge 2
+// const game = {
+//   team1: 'Bayern Munich',
+//   team2: 'Borrussia Dortmund',
+//   players: [
+//     [
+//       'Neuer',
+//       'Pavard',
+//       'Martinez',
+//       'Alaba',
+//       'Davies',
+//       'Kimmich',
+//       'Goretzka',
+//       'Coman',
+//       'Muller',
+//       'Gnarby',
+//       'Lewandowski',
+//     ],
+//     [
+//       'Burki',
+//       'Schulz',
+//       'Hummels',
+//       'Akanji',
+//       'Hakimi',
+//       'Weigl',
+//       'Witsel',
+//       'Hazard',
+//       'Brandt',
+//       'Sancho',
+//       'Gotze',
+//     ],
+//   ],
+//   score: '4:0',
+//   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+//   date: 'Nov 9th, 2037',
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
+
+// // 1.
+// const scored = game.scored.entries();
+// console.log(scored);
+
+// for (const [key, value] of scored) {
+//   console.log(`Goal ${key + 1}: ${value}`);
+// }
+
+// 2.
+// let average = 0;
+
+// const odd = Object.values(game.odds);
+// for (const avg of odd) {
+//   average += avg;
+// }
+// average /= odd.length;
+// console.log(average);
+
+// 3.
+// for (const [team, odd] of Object.entries(game.odds)) {
+//   const str = team === 'x' ? 'draw' : `victory ${game[team]}`;
+//   console.log(`Odd of ${str}: ${odd}`);
+// }
+
+// // 4.
+// const scorers = {
+//   Gnarby: 1,
+//   Hummels: 1,
+//   Lewandowski: 2,
+// };
+
+/*
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
@@ -84,7 +158,6 @@ for (const [key, { open, close }] of entries) {
   console.log(`On ${key} we open at ${open} and close at ${close}`);
 }
 
-/*
 if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
 
@@ -221,7 +294,7 @@ const guestCorrect = restaurant.numGuest ?? 10;
 console.log(guestCorrect);
 
 console.log('------- OR -------');
-// Use Any  data type, return ANY data tyype, short-circuiting
+// Use Any  data type, return ANY data type, short-circuiting
 console.log(3 || 'Emmanuel');
 console.log('' || 'Emmanuel');
 console.log(true || 0);
