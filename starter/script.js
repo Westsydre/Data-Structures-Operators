@@ -55,6 +55,8 @@ const restaurant = {
   },
 };
 
+
+/*
 // Sets
 const ordersSet = new Set([
   'Pizza',
@@ -94,80 +96,79 @@ console.log(
   new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
 );
 
-// Coding Challenge 2
-// const game = {
-//   team1: 'Bayern Munich',
-//   team2: 'Borrussia Dortmund',
-//   players: [
-//     [
-//       'Neuer',
-//       'Pavard',
-//       'Martinez',
-//       'Alaba',
-//       'Davies',
-//       'Kimmich',
-//       'Goretzka',
-//       'Coman',
-//       'Muller',
-//       'Gnarby',
-//       'Lewandowski',
-//     ],
-//     [
-//       'Burki',
-//       'Schulz',
-//       'Hummels',
-//       'Akanji',
-//       'Hakimi',
-//       'Weigl',
-//       'Witsel',
-//       'Hazard',
-//       'Brandt',
-//       'Sancho',
-//       'Gotze',
-//     ],
-//   ],
-//   score: '4:0',
-//   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
-//   date: 'Nov 9th, 2037',
-//   odds: {
-//     team1: 1.33,
-//     x: 3.25,
-//     team2: 6.5,
-//   },
-// };
+Coding Challenge 2
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
 
-// // 1.
-// const scored = game.scored.entries();
-// console.log(scored);
+// 1.
+const scored = game.scored.entries();
+console.log(scored);
 
-// for (const [key, value] of scored) {
-//   console.log(`Goal ${key + 1}: ${value}`);
-// }
+for (const [key, value] of scored) {
+  console.log(`Goal ${key + 1}: ${value}`);
+}
 
 // 2.
-// let average = 0;
+let average = 0;
 
-// const odd = Object.values(game.odds);
-// for (const avg of odd) {
-//   average += avg;
-// }
-// average /= odd.length;
-// console.log(average);
+const odd = Object.values(game.odds);
+for (const avg of odd) {
+  average += avg;
+}
+average /= odd.length;
+console.log(average);
 
 // 3.
-// for (const [team, odd] of Object.entries(game.odds)) {
-//   const str = team === 'x' ? 'draw' : `victory ${game[team]}`;
-//   console.log(`Odd of ${str}: ${odd}`);
-// }
+for (const [team, odd] of Object.entries(game.odds)) {
+  const str = team === 'x' ? 'draw' : `victory ${game[team]}`;
+  console.log(`Odd of ${str}: ${odd}`);
+}
 
-// // 4.
-// const scorers = {
-//   Gnarby: 1,
-//   Hummels: 1,
-//   Lewandowski: 2,
-// };
+// 4.
+const scorers = {
+  Gnarby: 1,
+  Hummels: 1,
+  Lewandowski: 2,
+};
 
-/*
 // Property NAMES
 const properties = Object.keys(openingHours);
 console.log(properties);
